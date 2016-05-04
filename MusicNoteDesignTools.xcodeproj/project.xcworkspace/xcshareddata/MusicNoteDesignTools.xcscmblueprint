@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4F361D3C300362CD49232562AB318FD0B8E64C49",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4F361D3C300362CD49232562AB318FD0B8E64C49" : 0,
+    "B69223F163EA35247B4D1269C59CA2743907C7D7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CB6C1B50-8834-463E-A7AD-D968D1D3A64A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4F361D3C300362CD49232562AB318FD0B8E64C49" : "MusicDesign\/",
+    "B69223F163EA35247B4D1269C59CA2743907C7D7" : "MusicNoteDesignTools"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MusicNoteDesignTools",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MusicNoteDesignTools.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tom7523326\/MusicDesign.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F361D3C300362CD49232562AB318FD0B8E64C49"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/tangsl\/Desktop\/MusicNoteDesignTools",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B69223F163EA35247B4D1269C59CA2743907C7D7"
+    }
+  ]
+}

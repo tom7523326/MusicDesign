@@ -742,7 +742,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.founder.musicNoteTools.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ca7d943b-ebcf-43e2-988f-315a84d0d615";
+				PROVISIONING_PROFILE = "000aceba-9908-4eab-a38e-aca833f1c3e8";
 			};
 			name = Debug;
 		};
@@ -760,7 +760,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.founder.musicNoteTools.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ca7d943b-ebcf-43e2-988f-315a84d0d615";
+				PROVISIONING_PROFILE = "000aceba-9908-4eab-a38e-aca833f1c3e8";
 			};
 			name = Release;
 		};

@@ -12,7 +12,7 @@ class MusicStorage {
     class func simulateTestData()->MusicSong
     {
 //       return MusicStorage.load1()!
-        return MusicStorage.simulateTestData2()
+       return MusicStorage.simulateTestData2()
     }
     
     class func simulateTestData1()->MusicSong

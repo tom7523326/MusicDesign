@@ -87,6 +87,7 @@ class MainViewController: UIViewController ,MainViewTopViewDelegate,SongShowView
             songShowView.height == songShowView.superview!.height - 165 - 152
             topView.top == topView.superview!.top
         }
+        
         self.showMeasureStaffView()
         
         
@@ -221,11 +222,17 @@ class MainViewController: UIViewController ,MainViewTopViewDelegate,SongShowView
         }
         songShowView.titleLable.text = musicModel.song.songName
         songShowView.speedLable.text = "\(musicModel.song.songSpeed)"
-        measureViewArray = musicHandler.showMeasureStaffViewOnView(songShowView,isRhythm: isRhythmState)
-        for view in measureViewArray{
-            view.delegate = self
-            view.highlightState = editState
-        }
+        //等待songShowView autolayout 等待1秒
+        dispatch_after(1,dispatch_get_main_queue(), {
+            self.measureViewArray = self.musicHandler.showMeasureStaffViewOnView(self.songShowView,isRhythm: self.isRhythmState)
+            for view in self.measureViewArray{
+                view.delegate = self
+                view.highlightState = self.editState
+            }
+            
+            })
+        
+       
         
     }
     
