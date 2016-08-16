@@ -56,16 +56,16 @@ class AddNewSongView :UIView {
         
         if addState == true{
             twoFourBtn = UIButton()
-            twoFourBtn.addTarget(self, action: Selector("twoFourBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+            twoFourBtn.addTarget(self, action: #selector(AddNewSongView.twoFourBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             
             addView.addSubview(twoFourBtn)
             
             threeFourBtn = UIButton()
-            threeFourBtn.addTarget(self, action: Selector("threeFourBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+            threeFourBtn.addTarget(self, action: #selector(AddNewSongView.threeFourBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             addView.addSubview(threeFourBtn)
             
             fourFourBtn = UIButton()
-            fourFourBtn.addTarget(self, action: Selector("fourFourBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+            fourFourBtn.addTarget(self, action: #selector(AddNewSongView.fourFourBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             fourFourBtn.setImage(UIImage(named: "addsong_rect_se"), forState: UIControlState.Normal)
             addView.addSubview(fourFourBtn)
             
@@ -120,12 +120,12 @@ class AddNewSongView :UIView {
         }
         let finishBtn = UIButton(frame: CGRectMake(124, 290, 113, 54))
         finishBtn.setImage(UIImage(named:"addsong_finish"), forState: UIControlState.Normal)
-        finishBtn.addTarget(self, action: Selector("finishBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        finishBtn.addTarget(self, action: #selector(AddNewSongView.finishBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         addView.addSubview(finishBtn)
         
         let cancelBtn = UIButton(frame: CGRectMake(294, 290, 113, 54))
         cancelBtn.setImage(UIImage(named:"addsong_cancel"), forState: UIControlState.Normal)
-        cancelBtn.addTarget(self, action: Selector("cancelBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        cancelBtn.addTarget(self, action: #selector(AddNewSongView.cancelBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         addView.addSubview(cancelBtn)
         
     }

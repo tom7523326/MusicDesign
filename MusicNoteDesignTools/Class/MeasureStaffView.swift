@@ -112,7 +112,7 @@ class MeasureStaffView:UIView {
         if staffType!.isNormal(){
             
             staffBackView = UIButton(frame:CGRectMake(leftMargin, FIRST_STAFF_TOP, staffWidth, (STAFF_SPACING + STAFF_LINE_HEIGHT) * CGFloat(4)))
-            staffBackView?.addTarget(self, action:Selector("selectBtnClickMethod:") , forControlEvents: UIControlEvents.TouchUpInside)
+            staffBackView?.addTarget(self, action:#selector(MeasureStaffView.selectBtnClickMethod(_:)) , forControlEvents: UIControlEvents.TouchUpInside)
             staffBackView?.alpha = 0.3
             self.addSubview(staffBackView!)
             staffBackView?.backgroundColor = UIColor.yellowColor()
@@ -122,16 +122,16 @@ class MeasureStaffView:UIView {
             selectBtn = UIButton(frame: CGRectMake(0, 0, 44, 44))
             selectBtn?.center = staffBackView!.center
             selectBtn?.setImage(UIImage(named: "midbtn_select"), forState: UIControlState.Normal)
-            selectBtn?.addTarget(self, action: Selector("selectBtnClickMethod:"), forControlEvents: UIControlEvents.TouchUpInside)
+            selectBtn?.addTarget(self, action: #selector(MeasureStaffView.selectBtnClickMethod(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(selectBtn!)
             selectBtn?.hidden = !highlightState
             
-            let singleTap = UITapGestureRecognizer(target: self, action: Selector("singleTapClick"))
+            let singleTap = UITapGestureRecognizer(target: self, action: #selector(MeasureStaffView.singleTapClick))
             singleTap.numberOfTouchesRequired = 1
             singleTap.numberOfTapsRequired = 1
             addGestureRecognizer(singleTap)
             
-            let doubleTap = UITapGestureRecognizer(target: self, action: Selector("doubleTapClick"))
+            let doubleTap = UITapGestureRecognizer(target: self, action: #selector(MeasureStaffView.doubleTapClick))
             doubleTap.numberOfTouchesRequired = 1
             doubleTap.numberOfTapsRequired = 2
             addGestureRecognizer(doubleTap)
@@ -293,38 +293,38 @@ class MeasureStaffView:UIView {
             let leftAddBtn  = UIButton(frame: CGRectMake(0, 0, 39, 44))
             leftAddBtn.setImage(UIImage(named: "midbtn_addmeasure_half"), forState:UIControlState.Normal)
             leftAddBtn.setImage(UIImage(named: "midbtn_addmeasure_half_se"), forState: UIControlState.Highlighted)
-            leftAddBtn.addTarget(self, action: Selector("addLeftMeasure"), forControlEvents: UIControlEvents.TouchUpInside)
+            leftAddBtn.addTarget(self, action: #selector(MeasureStaffView.addLeftMeasure), forControlEvents: UIControlEvents.TouchUpInside)
             leftTopView!.addSubview(leftAddBtn)
             
             let rightAddBtn  = UIButton(frame: CGRectMake(0, 0, 39, 44))
             rightAddBtn.setImage(UIImage(named: "midbtn_addmeasure_half"), forState:UIControlState.Normal)
             rightAddBtn.setImage(UIImage(named: "midbtn_addmeasure_half_se"), forState: UIControlState.Highlighted)
-            rightAddBtn.addTarget(self, action: Selector("addRightMeasure"), forControlEvents: UIControlEvents.TouchUpInside)
+            rightAddBtn.addTarget(self, action: #selector(MeasureStaffView.addRightMeasure), forControlEvents: UIControlEvents.TouchUpInside)
             rightTopView!.addSubview(rightAddBtn)
             
             let leftCopyBtn  = UIButton(frame: CGRectMake(40, 0, 39, 44))
             leftCopyBtn.setImage(UIImage(named: "midbtn_edit_measure_half"), forState:UIControlState.Normal)
             leftCopyBtn.setImage(UIImage(named: "midbtn_edit_measure_half_se"), forState: UIControlState.Highlighted)
-            leftCopyBtn.addTarget(self, action: Selector("copyToleft"), forControlEvents: UIControlEvents.TouchUpInside)
+            leftCopyBtn.addTarget(self, action: #selector(MeasureStaffView.copyToleft), forControlEvents: UIControlEvents.TouchUpInside)
             leftTopView!.addSubview(leftCopyBtn)
             
             let rightCopyBtn  = UIButton(frame: CGRectMake(40, 0, 39, 44))
             rightCopyBtn.setImage(UIImage(named: "midbtn_edit_measure_half"), forState:UIControlState.Normal)
             rightCopyBtn.setImage(UIImage(named: "midbtn_edit_measure_half_se"), forState: UIControlState.Highlighted)
-            rightCopyBtn.addTarget(self, action: Selector("copyToRight"), forControlEvents: UIControlEvents.TouchUpInside)
+            rightCopyBtn.addTarget(self, action: #selector(MeasureStaffView.copyToRight), forControlEvents: UIControlEvents.TouchUpInside)
             rightTopView!.addSubview(rightCopyBtn)
         }
         else{
             let leftAddBtn  = UIButton(frame: CGRectMake(0, 0, 44, 44))
             leftAddBtn.setImage(UIImage(named: "midbtn_addmeasure"), forState:UIControlState.Normal)
             leftAddBtn.setImage(UIImage(named: "midbtn_addmeasure_se"), forState: UIControlState.Highlighted)
-            leftAddBtn.addTarget(self, action: Selector("addLeftMeasure"), forControlEvents: UIControlEvents.TouchUpInside)
+            leftAddBtn.addTarget(self, action: #selector(MeasureStaffView.addLeftMeasure), forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(leftAddBtn)
             
             let rightAddBtn  = UIButton(frame: CGRectMake(bounds.width-44, 0, 44, 44))
             rightAddBtn.setImage(UIImage(named: "midbtn_addmeasure"), forState:UIControlState.Normal)
             rightAddBtn.setImage(UIImage(named: "midbtn_addmeasure_se"), forState: UIControlState.Highlighted)
-            rightAddBtn.addTarget(self, action: Selector("addRightMeasure"), forControlEvents: UIControlEvents.TouchUpInside)
+            rightAddBtn.addTarget(self, action: #selector(MeasureStaffView.addRightMeasure), forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(rightAddBtn)
             
             leftTopView = leftAddBtn

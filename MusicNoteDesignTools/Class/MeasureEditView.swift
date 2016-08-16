@@ -37,11 +37,11 @@ class MeasureEditView : UIView ,NoteKeyBtnDelegate{
         let image :UIImage! = UIImage(named: "bg_content")
         backgroundColor = UIColor(patternImage: image)
         
-        for var i = 0; i < 10; ++i{
+        for i in 0 ..< 10{
             let note:MusicNote = MusicNote(type: NOTE_TYPE(rawValue: i)!, scale: NOTE_SCALE.a)
             noteArray.append(note)
         }
-        for var i = 10;i < 20; ++i{
+        for i in 10 ..< 20{
             let note:MusicNote = MusicNote(type: NOTE_TYPE(rawValue: i)!, scale: NOTE_SCALE.a)
             dottedNoteArray.append(note)
         }
@@ -67,10 +67,10 @@ class MeasureEditView : UIView ,NoteKeyBtnDelegate{
         repeatRightBtn.image = UIImage(named: "bg_whitekey")
         bottomKeyView.addSubview(repeatRightBtn)
         
-        for var i = 0; i < 10 ; ++i{
+        for i in 0 ..< 10 {
             let btn: NoteKeyBtn = NoteKeyBtn(frame: CGRectMake(180 + CGFloat(i) * (EDIT_BOTTOM_BTN_WIDTH + EDIT_BOTTOM_BTN_SPACING), EDIT_BOTTOM_BTN_TOP, EDIT_BOTTOM_BTN_WIDTH, EDIT_BOTTOM_BTN_HEIGHT))
             btn.setImage(UIImage(named: "bg_whitekey"), forState:UIControlState.Normal)
-            btn.addTarget(self, action:Selector("noteKeyBtnClick:"), forControlEvents: UIControlEvents.TouchDown)
+            btn.addTarget(self, action:#selector(MeasureEditView.noteKeyBtnClick(_:)), forControlEvents: UIControlEvents.TouchDown)
             btn.delegate = self
             btn.tag = i
             
@@ -90,7 +90,7 @@ class MeasureEditView : UIView ,NoteKeyBtnDelegate{
         
         dottedChangedBtn = UIButton(frame: CGRectMake(180 + CGFloat(10) * (EDIT_BOTTOM_BTN_WIDTH + EDIT_BOTTOM_BTN_SPACING) + 50, (173-77)/2, 77, 77))
         dottedChangedBtn.setImage(UIImage(named: "bottombtn_change"), forState:UIControlState.Normal)
-        dottedChangedBtn.addTarget(self, action: Selector("dottedChangedBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+        dottedChangedBtn.addTarget(self, action: #selector(MeasureEditView.dottedChangedBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         bottomKeyView.addSubview(dottedChangedBtn)
         
         
@@ -139,7 +139,7 @@ class MeasureEditView : UIView ,NoteKeyBtnDelegate{
             btnDottedState = false
         }
         
-        for var i = 0; i < 10 ; ++i{
+        for i in 0 ..< 10 {
             noteBtnArray[i].noteImageView!.image = getNoteWithIndex(i).getNoteImage()
         }
         checkCanUseNote()

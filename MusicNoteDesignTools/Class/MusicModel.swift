@@ -53,7 +53,7 @@ class MusicModel{
 
 // MARK: ----------add res-----------------
     func addSelectIndex(sIndex :Int){
-        for var i = 0; i < selectIndexArray.count; ++i{
+        for i in 0 ..< selectIndexArray.count{
             let tIndex = selectIndexArray[i]
             if tIndex == sIndex{
                 return
@@ -94,7 +94,7 @@ class MusicModel{
 
 // MARK: ----------business res-----------------
     func removeSelectIndex(sIndex :Int){
-        for var i = 0; i < selectIndexArray.count; ++i{
+        for i in 0 ..< selectIndexArray.count{
             let tIndex = selectIndexArray[i]
             if tIndex == sIndex{
                 selectIndexArray.removeAtIndex(i)
@@ -134,13 +134,13 @@ class MusicModel{
         if tempCopyArray.count > 0{
             
         }
-        for var i = 0; i < tempCopyArray.count ; ++i{
+        for i in 0 ..< tempCopyArray.count {
             song.measureArray.insert(tempCopyArray[i].mutableCopy() as! MusicMeasure, atIndex: aIndex + i)
         }
     }
     
     func renewMeasureIndex(){
-        for var i = 0;i < song.measureArray.count;++i{
+        for i in 0 ..< song.measureArray.count{
             let measure = song.measureArray[i]
             measure.measureIndex = i
         }

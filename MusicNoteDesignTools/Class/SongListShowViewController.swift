@@ -35,7 +35,7 @@ class SongListShowViewController :UIViewController,UITableViewDataSource,UITable
         imageTableView.userInteractionEnabled = true
         view.addSubview(imageTableView)
         
-        let singleTap = UITapGestureRecognizer(target: self, action: Selector("singleTapClick"))
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(SongListShowViewController.singleTapClick))
         singleTap.numberOfTouchesRequired = 1
         singleTap.numberOfTapsRequired = 1
         lightBlackView.addGestureRecognizer(singleTap)

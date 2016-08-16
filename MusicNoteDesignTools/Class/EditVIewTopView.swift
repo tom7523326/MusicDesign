@@ -35,21 +35,21 @@ class EditVIewTopView :UIView{
         let playbtn :UIButton! = UIButton()
         playbtn.setImage(UIImage(named: "topbtn_play"),  forState: UIControlState.Normal)
         playbtn.setImage(UIImage(named: "topbtn_play_se"),  forState: UIControlState.Highlighted)
-        playbtn.addTarget(self, action: Selector("playBtnClickMethod:"), forControlEvents: UIControlEvents.TouchUpInside)
+        playbtn.addTarget(self, action: #selector(EditVIewTopView.playBtnClickMethod(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self .addSubview(playbtn)
         
         //add btn init
         let backBtn :UIButton! = UIButton()
         backBtn.setImage(UIImage(named: "topbtn_back"),  forState: UIControlState.Normal)
         backBtn.setImage(UIImage(named: "topbtn_back_se"),  forState: UIControlState.Highlighted)
-        backBtn.addTarget(self, action: Selector("backBtnClickMethod:"), forControlEvents: UIControlEvents.TouchUpInside)
+        backBtn.addTarget(self, action: #selector(EditVIewTopView.backBtnClickMethod(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self .addSubview(backBtn)
         
         //table btn init
         let cleanBtn :UIButton! = UIButton()
         cleanBtn.setImage(UIImage(named: "topbtn_clean"), forState: UIControlState.Normal)
         cleanBtn.setImage(UIImage(named: "topbtn_clean_se"), forState: UIControlState.Highlighted)
-        cleanBtn.addTarget(self, action: Selector("cleanBtnClickMethod:"), forControlEvents: UIControlEvents.TouchUpInside)
+        cleanBtn.addTarget(self, action: #selector(EditVIewTopView.cleanBtnClickMethod(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.addSubview(cleanBtn)
         
         constrain(playbtn, cleanBtn,backBtn){

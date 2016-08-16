@@ -34,35 +34,35 @@ class MusicBottomExpertView :UIView {
         undoBtn = UIButton()
         undoBtn.setImage(UIImage(named: "bottombtn_last"),forState: UIControlState.Normal)
         undoBtn.setImage(UIImage(named: "bottombtn_last_se"),forState: UIControlState.Highlighted)
-        undoBtn.addTarget(self, action: Selector("undoBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        undoBtn.addTarget(self, action: #selector(MusicBottomExpertView.undoBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         undoBtn.enabled = false
         self.addSubview(undoBtn)
         
         redoBtn = UIButton()
         redoBtn.setImage(UIImage(named: "bottombtn_next"),forState: UIControlState.Normal)
         redoBtn.setImage(UIImage(named: "bottombtn_next_se"),forState: UIControlState.Highlighted)
-        redoBtn.addTarget(self, action: Selector("redoBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        redoBtn.addTarget(self, action: #selector(MusicBottomExpertView.redoBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         redoBtn.enabled = false
         self.addSubview(redoBtn)
         
         deleteBtn = UIButton()
         deleteBtn.setImage(UIImage(named: "bottombtn_delete"),forState: UIControlState.Normal)
         deleteBtn.setImage(UIImage(named: "bottombtn_delete_se"),forState: UIControlState.Highlighted)
-        deleteBtn.addTarget(self, action: Selector("deleteBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        deleteBtn.addTarget(self, action: #selector(MusicBottomExpertView.deleteBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         deleteBtn.enabled = false
         self.addSubview(deleteBtn)
         
         copyBtn = UIButton()
         copyBtn.setImage(UIImage(named: "bottombtn_copy"),forState: UIControlState.Normal)
         copyBtn.setImage(UIImage(named: "bottombtn_copy_se"),forState: UIControlState.Highlighted)
-        copyBtn.addTarget(self, action: Selector("copyBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        copyBtn.addTarget(self, action: #selector(MusicBottomExpertView.copyBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         copyBtn.enabled = false
         self.addSubview(copyBtn)
         
         cutBtn = UIButton()
         cutBtn.setImage(UIImage(named: "bottombtn_cut"),forState: UIControlState.Normal)
         cutBtn.setImage(UIImage(named: "bottombtn_cut_se"),forState: UIControlState.Highlighted)
-        cutBtn.addTarget(self, action: Selector("cutBtnClick"), forControlEvents: UIControlEvents.TouchUpInside)
+        cutBtn.addTarget(self, action: #selector(MusicBottomExpertView.cutBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         cutBtn.enabled = false
         self.addSubview(cutBtn)
         

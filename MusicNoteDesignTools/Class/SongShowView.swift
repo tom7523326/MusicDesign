@@ -69,7 +69,7 @@ class SongShowView: UIScrollView {
 //        }
         
         
-        let singleTap = UITapGestureRecognizer(target: self, action: Selector("singleTapClick"))
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(SongShowView.singleTapClick))
         singleTap.numberOfTouchesRequired = 1
         singleTap.numberOfTapsRequired = 1
         addGestureRecognizer(singleTap)

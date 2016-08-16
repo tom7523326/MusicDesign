@@ -89,78 +89,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MusicNoteDesignTools/Class/MusicHandler.swift"
-            timestampString = "480334498.95062"
+            filePath = "MusicNoteDesignTools/Class/MeasureEditView.swift"
+            timestampString = "493034751.683647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "showMeasureStaffViewOnView(_:isRhythm:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "init(frame:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MusicNoteDesignTools/Class/MainViewController.swift"
-            timestampString = "480335355.749895"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "showMeasureStaffView()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MusicNoteDesignTools/Class/MainViewController.swift"
-            timestampString = "480334900.217999"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MusicNoteDesignTools.MainViewController.viewDidLoad (MusicNoteDesignTools.MainViewController)() -&gt; ()"
-                  moduleName = "MusicNoteDesignTools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wan/MusicDesign/MusicNoteDesignTools/Class/MainViewController.swift"
-                  timestampString = "480334906.713742"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "4936">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MusicNoteDesignTools.MainViewController.(viewDidLoad (MusicNoteDesignTools.MainViewController) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "MusicNoteDesignTools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wan/MusicDesign/MusicNoteDesignTools/Class/MainViewController.swift"
-                  timestampString = "480334906.714489"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "59">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
