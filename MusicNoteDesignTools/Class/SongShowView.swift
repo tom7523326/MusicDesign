@@ -53,7 +53,7 @@ class SongShowView: UIScrollView {
         constrain(titleLable) { titleLable in
             titleLable.centerX == titleLable.superview!.centerX
             titleLable.top == titleLable.superview!.top
-            titleLable.width == 100
+//            titleLable.width == 100//宽度自适应
             titleLable.height == 40
         }
         

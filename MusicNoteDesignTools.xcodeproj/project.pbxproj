@@ -19,7 +19,6 @@
 		133F54601B65C470005AADB9 /* SongShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F545F1B65C470005AADB9 /* SongShowView.swift */; };
 		136A78181B42327B00A1FC0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A78171B42327B00A1FC0B /* AppDelegate.swift */; };
 		136A781B1B42327C00A1FC0B /* MusicNoteDesignTools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 136A78191B42327B00A1FC0B /* MusicNoteDesignTools.xcdatamodeld */; };
-		136A78201B42327C00A1FC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 136A781E1B42327C00A1FC0B /* Main.storyboard */; };
 		136A78221B42327C00A1FC0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 136A78211B42327C00A1FC0B /* Images.xcassets */; };
 		136A78251B42327C00A1FC0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136A78231B42327C00A1FC0B /* LaunchScreen.xib */; };
 		136A78311B42327E00A1FC0B /* MusicNoteDesignToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A78301B42327E00A1FC0B /* MusicNoteDesignToolsTests.swift */; };
@@ -106,7 +105,6 @@
 		136A78161B42327B00A1FC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		136A78171B42327B00A1FC0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		136A781A1B42327B00A1FC0B /* MusicNoteDesignTools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicNoteDesignTools.xcdatamodel; sourceTree = "<group>"; };
-		136A781F1B42327C00A1FC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		136A78211B42327C00A1FC0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		136A78241B42327C00A1FC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		136A782A1B42327D00A1FC0B /* MusicNoteDesignToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicNoteDesignToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,7 +307,6 @@
 				133F54141B5F2D09005AADB9 /* View */,
 				133F54131B5F2CF6005AADB9 /* Controller */,
 				136A78171B42327B00A1FC0B /* AppDelegate.swift */,
-				136A781E1B42327C00A1FC0B /* Main.storyboard */,
 				136A78211B42327C00A1FC0B /* Images.xcassets */,
 				136A78231B42327C00A1FC0B /* LaunchScreen.xib */,
 				136A78191B42327B00A1FC0B /* MusicNoteDesignTools.xcdatamodeld */,
@@ -485,7 +482,7 @@
 				TargetAttributes = {
 					136A78111B42327900A1FC0B = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = JWD48Y236P;
+						DevelopmentTeam = A6524QBUHH;
 					};
 					136A78291B42327D00A1FC0B = {
 						CreatedOnToolsVersion = 6.2;
@@ -525,7 +522,6 @@
 				13FB644E1B81915000E855F0 /* C2.wav in Resources */,
 				22397E3D1BFDD75F005AA81E /* symbol_Two_Four_Time.png in Resources */,
 				13FB64511B81915000E855F0 /* E1.wav in Resources */,
-				136A78201B42327C00A1FC0B /* Main.storyboard in Resources */,
 				136A78251B42327C00A1FC0B /* LaunchScreen.xib in Resources */,
 				22397E3C1BFDD75F005AA81E /* symbol_Three_Four_Time@2x.png in Resources */,
 				13FB644C1B81915000E855F0 /* B1.wav in Resources */,
@@ -627,14 +623,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		136A781E1B42327C00A1FC0B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				136A781F1B42327C00A1FC0B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		136A78231B42327C00A1FC0B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -732,7 +720,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Founder Electronics Co Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MusicNoteDesignTools",
@@ -740,9 +729,9 @@
 				INFOPLIST_FILE = MusicNoteDesignTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.founder.musicNoteTools.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.founder.musicNoteTools.MusicNoteDesignTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "000aceba-9908-4eab-a38e-aca833f1c3e8";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -750,7 +739,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Founder Electronics Co Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MusicNoteDesignTools",
@@ -758,9 +748,9 @@
 				INFOPLIST_FILE = MusicNoteDesignTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.founder.musicNoteTools.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.founder.musicNoteTools.MusicNoteDesignTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "000aceba-9908-4eab-a38e-aca833f1c3e8";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
