@@ -12,6 +12,16 @@ import UIKit
 
 class MainViewController: UIViewController ,MainViewTopViewDelegate,SongShowViewDelegate,MeasureStaffViewDelegate,MusicBottomExpertViewDelegate,EditMainViewControllerDelegate,AddNewSongViewDelegate,SongListShowViewControllerDelegate{
     // MARK: ——————————————instance—————————————————
+    var reFreshMusicModel :MusicModel?
+        {
+        didSet{
+            songShowView.titleLable.text = "\(reFreshMusicModel!.song.songName)"
+            songShowView.speedLable.text = "\(reFreshMusicModel!.song.songSpeed)"
+            musicModel = reFreshMusicModel
+            musicHandler.musicModel = reFreshMusicModel
+            self.showMeasureStaffView()
+        }
+    }
     var topView :MusicalTopView!
     var bottomView :UIView!
     var songShowView :SongShowView!
